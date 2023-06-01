@@ -25,6 +25,7 @@ We won't stop opposite direction lifts for simplicity even they are nearest
 	a.user floor
 	b.user destination floor
 	c.user count
+	d.Direction
 
 All these classes(2 to 5) are inhereted from base class 
 
@@ -33,16 +34,12 @@ User class => Request Handling class => Capacity Handling class => Floor managem
 
 
 
-PseudoCode
-class Base
-	def __init__(self,direction:dict(), max_capacity:dict(), position:priority_queue())
-		self.direction = direction
-		self.max_capacity = max_capacity
-		self.position = position
-class RequestHandler(Base)
-	Base.__init__(direction:dict(),max_capacity():dict(),position:dict())
-	
 
+
+
+
+
+	
 
 
 
