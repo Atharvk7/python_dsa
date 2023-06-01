@@ -1,7 +1,7 @@
 
 a =[(7,8), (5,6), (1,3), (6,7)]
 def mergeintervals(intervals,n):
-    intervals.sort()     # here we are sorting the input array 
+    intervals.sort()     # here we are sorting the input array this is Tim sort which sorts the array in O(nlogn) it is merge sort + insertion sort
     if n == 0 or n == 1:
         return intervals
     i = 0
