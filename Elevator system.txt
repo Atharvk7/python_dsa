@@ -1,0 +1,52 @@
+Elevator system
+
+Positive direction = to go up
+Negative direction = to go down
+
+1. Create base class which has following properties
+	a.direction (Hash Tables)
+	b.max_capacity (hash Tables)
+	c.positions of every lift (Priority queue/min_heap)
+
+2.Request Handling class #request buttons/screen
+We won't stop opposite direction lifts for simplicity even they are nearest
+	a.check for the nearest lift while direction is negative/postive and intervals are mergeable (current lift [start_point,destination_point] is greater than requested [start_point,destination_point]
+	b.if intervals are not mergeable then only for positive(to go up) direction we call another lift which is nearest (use priority queue)(stopped)
+
+
+3. Capacity handling class
+	a.check for capacity if capacity is max then lift shoudn't stop for any floor
+	b.Handle max_capacity while persons enter or exit
+
+4. Floor management class 
+	a. It stores current floor count and modifies position of lift
+
+5. User class
+	a.user floor
+	b.user destination floor
+	c.user count
+
+All these classes(2 to 5) are inhereted from base class 
+
+Flow of the system 
+User class => Request Handling class => Capacity Handling class => Floor management class
+
+
+
+PseudoCode
+class Base
+	def __init__(self,direction:dict(), max_capacity:dict(), position:priority_queue())
+		self.direction = direction
+		self.max_capacity = max_capacity
+		self.position = position
+class RequestHandler(Base)
+	Base.__init__(direction:dict(),max_capacity():dict(),position:dict())
+	
+
+
+
+
+
+
+
+	
